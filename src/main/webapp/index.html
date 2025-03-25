@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Misión Productividad</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-container">
+      <header class="app-header">
+        <h1 class="app-title">Misión Productividad</h1>
+        <div class="header-controls">
+          <button id="modeToggle" class="mode-toggle" aria-label="Cambiar tema">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+          </button>
+          <div id="userNav" class="user-nav">
+            <button class="user-avatar" aria-label="Menú de usuario">US</button>
+            <div class="user-menu hidden">
+              <div class="user-info">
+                <p class="username">usuario</p>
+                <p class="user-level">Nivel 5 Maestro de Productividad</p>
+              </div>
+              <hr class="menu-divider" />
+              <button class="menu-item">
+                <span class="icon">👤</span> Perfil
+              </button>
+              <button class="menu-item">
+                <span class="icon">👑</span> Actualizar a Pro
+              </button>
+              <button class="menu-item">
+                <span class="icon">⚙️</span> Configuración
+              </button>
+              <hr class="menu-divider" />
+              <button class="menu-item">
+                <span class="icon">🚪</span> Cerrar sesión
+              </button>
+              <form action="/testeo/iniciar" method="post">
+                <button class="menu-item" type="submit">
+                  <span class="icon">🚪</span> Iniciar sesión
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="app-main">
+        <div class="tabs-container">
+          <div class="tab-list">
+            <button class="tab active" data-tab="dashboard">Panel</button>
+            <button class="tab" data-tab="todos">Misiones</button>
+            <button class="tab" data-tab="timer">Forja del Tiempo</button>
+            <button class="tab" data-tab="achievements">Logros</button>
+          </div>
+          <div id="dashboard" class="tab-content active"></div>
+          <div id="todos" class="tab-content"></div>
+          <div id="timer" class="tab-content"></div>
+          <div id="achievements" class="tab-content"></div>
+        </div>
+      </main>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
