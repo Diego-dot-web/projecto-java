@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión - Misión Productividad</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+  </head>
+  <body>
+    <div class="app-container form-page">
+      <div class="form-container">
+        <div class="form-header">
+          <h1 class="form-title">Iniciar Sesión</h1>
+          <p class="form-subtitle">Continúa tu misión de productividad</p>
+        </div>
+
+        <form id="loginForm" class="auth-form">
+          <div class="form-group">
+            <label for="loginEmail">Correo electrónico o usuario</label>
+            <input
+              type="text"
+              id="loginEmail"
+              name="loginEmail"
+              class="form-input"
+              placeholder="correo@ejemplo.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="loginPassword">Contraseña</label>
+            <input
+              type="password"
+              id="loginPassword"
+              name="loginPassword"
+              class="form-input"
+              placeholder="Tu contraseña"
+              required
+            />
+          </div>
+
+          <div class="form-options">
+            <div class="checkbox-group">
+              <input type="checkbox" id="recordarme" name="recordarme" />
+              <label for="recordarme">Recordarme</label>
+            </div>
+            <a href="#" class="form-link">¿Olvidaste tu contraseña?</a>
+          </div>
+
+          <button type="submit" class="form-button">Iniciar sesión</button>
+
+          <div class="form-footer">
+            <p>
+              ¿No tienes una cuenta?
+              <a href="registro.html" class="form-link">Regístrate</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- <script src="js/forms.js"></script> -->
+  </body>
+</html>
